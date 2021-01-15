@@ -2,6 +2,10 @@ body {
   background-color: beige;
 }
 
+h1 {
+  text-align: center;
+}
+
 .questionOne {
   margin-top:auto;
   padding: 18px;
@@ -17,6 +21,11 @@ body {
 }
 
 .questionFour {
+  margin-top:auto;
+  padding: 18px;
+}
+
+.questionFive {
   margin-top:auto;
   padding: 18px;
 }
