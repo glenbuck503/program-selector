@@ -12,8 +12,10 @@ $(document).ready(function() {
     $("#go").hide()
     $("#python").hide()
     $("#ruby").hide()
+    $(".result").hide()
     
     if (total === 5) {
+      $(".result").show();
       $("#rust").show();
     } else if ( total > 5 && total < 8) {
       $("#go").show();

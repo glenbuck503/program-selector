@@ -45,3 +45,10 @@ h1 {
 #ruby {
   display: none;
 }
+
+.result {
+  padding: 50px;
+  border: solid green;
+  display: none;
+}
+  
