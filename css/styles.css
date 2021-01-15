@@ -29,3 +29,19 @@ h1 {
   margin-top:auto;
   padding: 18px;
 }
+
+.rust {
+  display: none;
+}
+
+.go {
+  display: none;
+}
+
+.python {
+  display: none;
+}
+
+.ruby {
+  display: none;
+}
