@@ -31,3 +31,13 @@ $(document).ready(function() {
     }
   });
 });
+
+  $(document).ready(function() {
+    $("form#code").submit(function() {
+      event.preventDefault();
+
+      let userCode = $("input#submit").val();
+      console.log(userCode);
+     
+  });
+});
