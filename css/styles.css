@@ -63,7 +63,18 @@ h1 {
   
 }
 
+.ocean-background {
+  background: url(../img/ocean.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+
+
+
+}
+
 .black-background {
   background-color: black;
   color:white;
 }
+
