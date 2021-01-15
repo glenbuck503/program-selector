@@ -7,9 +7,12 @@ $(document).ready(function() {
     const questionFour = parseInt($("input:radio[name=question4]:checked").val());
     const questionFive = parseInt($("input:radio[name=question5]:checked").val());
     const total = (questionOne + questionTwo + questionThree + questionFour + questionFive);
-    
-    console.log(total);
 
+    $("#rust").hide()
+    $("#go").hide()
+    $("#python").hide()
+    $("#ruby").hide()
+    
     if (total === 5) {
       $("#rust").show();
     } else if ( total > 5 && total < 8) {
@@ -19,6 +22,7 @@ $(document).ready(function() {
     } else if (total === 12){
       $("#ruby").show()
     }
+
     
   });
 });
