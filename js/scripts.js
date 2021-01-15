@@ -18,10 +18,13 @@ $(document).ready(function() {
       $(".result").show();
       $("#rust").show();
     } else if ( total > 5 && total < 8) {
+      $(".result").show();
       $("#go").show();
     } else if (total >= 8 && total < 12){
+      $(".result").show();
       $("#python").show()
     } else if (total === 12){
+      $(".result").show();
       $("#ruby").show()
     }
 

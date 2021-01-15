@@ -47,10 +47,17 @@ h1 {
 }
 
 .result {
-  padding: 175px;
+  padding: 10px;
   border: solid green;
   display: none;
-  margin-top: 100px;
+  margin-top: 80px;
+  
+}
+
+.pic {
+  display: block;
+  width: 100%;
+  padding: 60px;
   
 }
   
