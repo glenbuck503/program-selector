@@ -30,18 +30,18 @@ h1 {
   padding: 18px;
 }
 
-.rust {
+#rust {
   display: none;
 }
 
-.go {
+#go {
   display: none;
 }
 
-.python {
+#python {
   display: none;
 }
 
-.ruby {
+#ruby {
   display: none;
 }
