@@ -17,8 +17,8 @@ $(document).ready(function() {
     
     if (total === 5) {
       $(".result").fadeIn();
-      $("#rust").prepend("Hi" + " " + userName + "!");
-      $("#rust").fadeIn();
+      $("#ruby").prepend("Hi" + " " + userName + "!");
+      $("#ruby").fadeIn();
     } else if ( total > 5 && total < 8) {
       $(".result").fadeIn();
       $("#go").fadeIn();
@@ -27,7 +27,7 @@ $(document).ready(function() {
       $("#python").fadeIn()
     } else if (total === 12){
       $(".result").fadeIn();
-      $("#ruby").fadeIn()
+      $("#rust").fadeIn()
     }
     
   });
