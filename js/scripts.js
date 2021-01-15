@@ -15,8 +15,8 @@ $(document).ready(function() {
     $(".result").hide()
     
     if (total === 5) {
-      $(".result").show();
-      $("#rust").show();
+      $(".result").fadeIn();
+      $("#rust").fadeIn();
     } else if ( total > 5 && total < 8) {
       $(".result").show();
       $("#go").show();
