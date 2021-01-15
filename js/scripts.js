@@ -29,15 +29,12 @@ $(document).ready(function() {
       $(".result").fadeIn();
       $("#ruby").fadeIn()
     }
+    
+  });
+
+  $("button#black").click(function() {
+    $("body").removeClass();
+    $("body").addClass("black-background");
   });
 });
 
-  $(document).ready(function() {
-    $("form#code").submit(function() {
-      event.preventDefault();
-
-      let userCode = $("input#submit").val();
-      console.log(userCode);
-     
-  });
-});
