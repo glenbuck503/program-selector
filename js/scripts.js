@@ -29,12 +29,11 @@ $(document).ready(function() {
       $(".result").fadeIn();
       $("#rust").fadeIn()
     }
-    
   });
 
-  $("button#black").click(function() {
+  $("button#beige").click(function() {
     $("body").removeClass();
-    $("body").addClass("black-background");
+    $("body").addClass("beige-background");
   });
 });
 
