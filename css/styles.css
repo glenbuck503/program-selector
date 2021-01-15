@@ -1,9 +1,25 @@
 body {
-  background-color: beige;
+  background-color: black;
+  color:white;
 }
+
+p.one {
+  color:white;
+}
+
+p {
+  color:white;
+}
+
+label {
+  color:green;
+}
+
+
 
 h1 {
   text-align: center;
+  color: green;
 }
 
 .questionOne {
@@ -53,28 +69,19 @@ h1 {
   margin-top: 80px;
   text-align: center;
   color: green;
-  
 }
 
 .pic {
   display: block;
   width: 100%;
   padding: 60px;
-  
 }
-
-.ocean-background {
-  background: url(../img/ocean.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color:white;
-
-
-
-}
-
 .black-background {
   background-color: black;
   color:white;
+}
+
+.background {
+  margin-top:50px;
 }
 

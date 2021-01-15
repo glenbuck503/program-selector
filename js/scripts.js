@@ -36,10 +36,5 @@ $(document).ready(function() {
     $("body").removeClass();
     $("body").addClass("black-background");
   });
-
-  $("button#ocean").click(function() {
-    $("body").removeClass();
-    $("body").addClass("ocean-background");
-  });
 });
 
