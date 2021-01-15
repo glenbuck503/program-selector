@@ -18,14 +18,14 @@ $(document).ready(function() {
       $(".result").fadeIn();
       $("#rust").fadeIn();
     } else if ( total > 5 && total < 8) {
-      $(".result").show();
-      $("#go").show();
+      $(".result").fadeIn();
+      $("#go").fadeIn();
     } else if (total >= 8 && total < 12){
-      $(".result").show();
-      $("#python").show()
+      $(".result").fadeIn();
+      $("#python").fadeIn()
     } else if (total === 12){
-      $(".result").show();
-      $("#ruby").show()
+      $(".result").fadeIn();
+      $("#ruby").fadeIn()
     }
 
     

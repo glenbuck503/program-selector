@@ -51,6 +51,8 @@ h1 {
   border: solid green;
   display: none;
   margin-top: 80px;
+  text-align: center;
+  color: green;
   
 }
 
@@ -60,4 +62,4 @@ h1 {
   padding: 60px;
   
 }
-  
+
