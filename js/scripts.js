@@ -35,30 +35,22 @@ $(document).ready(function() {
 
   $("form#code").submit(function() {
     event.preventDefault();
-
-
-
-   
     let codeCheck = $.trim($("#codeCheck").val());
-    
     const code = "glen";
-  
 
     $(".codeResults").hide();
     $("#correct").hide();
     $("#no").hide();
 
-      if (codeCheck != "" && codeCheck == "glen"){
-
-        $(".codeResults").show();
-        $("#correct").fadeIn();
-        
-      }
-    
-
-     else {
+    if (codeCheck != "" && codeCheck == "$(\"body\").removeClass();"){
+      $("body").removeClass();
+      $("body").addClass("blue-background");
       $(".codeResults").show();
-      $("#no").fadeIn();
+      $("#correct").fadeIn();
+    }
+    else {
+    $(".codeResults").show();
+    $("#no").fadeIn();
     }
   });
 });
