@@ -31,9 +31,36 @@ $(document).ready(function() {
     }
   });
 
-  $("button#beige").click(function() {
-    $("body").removeClass();
-    $("body").addClass("beige-background");
+
+
+  $("form#code").submit(function() {
+    event.preventDefault();
+
+
+
+   
+    let codeCheck = $.trim($("#codeCheck").val());
+    
+    const code = "glen";
+  
+
+    $(".codeResults").hide();
+    $("#correct").hide();
+    $("#no").hide();
+
+      if (codeCheck != "" && codeCheck == "glen"){
+
+        $(".codeResults").show();
+        $("#correct").fadeIn();
+        
+      }
+    
+
+     else {
+      $(".codeResults").show();
+      $("#no").fadeIn();
+    }
   });
 });
+
 
