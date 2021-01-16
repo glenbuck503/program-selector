@@ -42,15 +42,15 @@ $(document).ready(function() {
     $("#correct").hide();
     $("#no").hide();
 
-    if (codeCheck != "" && codeCheck == "$(\"body\").removeClass();"){
+    if (codeCheck != "" && codeCheck == "$(\"body\").addClass(\"blue-background\");"){
       $("body").removeClass();
       $("body").addClass("blue-background");
-      $(".codeResults").show();
-      $("#correct").fadeIn();
+      // $(".codeResults").show();
+      // $("#correct").fadeIn();
     }
-    else {
+    else if (codeCheck != "" && codeCheck == "img class=\"pic\" src=\"img/rust.png\""){
     $(".codeResults").show();
-    $("#no").fadeIn();
+    $("#correct").fadeIn();
     }
   });
 });
