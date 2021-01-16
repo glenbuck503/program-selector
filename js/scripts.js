@@ -8,34 +8,44 @@ $(document).ready(function() {
     const questionFive = parseInt($("input:radio[name=question5]:checked").val());
     const total = (questionOne + questionTwo + questionThree + questionFour + questionFive);
     let userName = $("input#name").val();
-
+    
     $("#rust").hide()
     $("#go").hide()
     $("#python").hide()
     $("#ruby").hide()
     $(".result").hide()
     
+    
     if (total === 5) {
-      $(".result").fadeIn();
       $("#ruby").prepend("Hi" + " " + userName + "!");
+      $(".result").fadeIn();
       $("#ruby").fadeIn();
-    } else if ( total > 5 && total < 8) {
+      ClearFields();
+
+      } else if ( total > 5 && total < 8) {
+      $("#go").prepend("Hi" + " " + userName + "!");
       $(".result").fadeIn();
       $("#go").fadeIn();
-    } else if (total >= 8 && total < 12){
+      ClearFields();
+      
+      } else if (total >= 8 && total < 12){
+      $("#python").prepend("Hi" + " " + userName + "!");
       $(".result").fadeIn();
-      $("#python").fadeIn()
-    } else if (total === 12){
+      $("#python").fadeIn();
+      ClearFields();
+    
+      } else if (total === 12){
+      $("#rust").prepend("Hi" + " " + userName + "!");
       $(".result").fadeIn();
-      $("#rust").fadeIn()
+      $("#rust").fadeIn();
+      ClearFields();
     }
   });
 
   $("form#code").submit(function() {
     event.preventDefault();
     let codeCheck = $.trim($("#codeCheck").val());
-    const code = "glen";
-
+  
     $(".codeResults").hide();
     $("#correct").hide();
     $("#no").hide();
