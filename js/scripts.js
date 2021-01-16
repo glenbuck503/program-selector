@@ -35,7 +35,7 @@ $(document).ready(function() {
       ClearFields();
     
       } else if (total === 12){
-      $("#rust").prepend("Hi" + " " + userName + "!");
+      $("#rust").text("Hi" + " " + userName + "!");
       $(".result").fadeIn();
       $("#rust").fadeIn();
       ClearFields();
@@ -53,7 +53,7 @@ $(document).ready(function() {
     if (codeCheck != "" && codeCheck == "$(\"body\").addClass(\"blue-background\");"){
       $("body").removeClass();
       $("body").addClass("blue-background");
-    } else if (codeCheck != "" && codeCheck == "img class=\"pic\" src=\"img/rust.png\""){
+    } else if (codeCheck != "" && codeCheck == "img class=\"pic\" src=\"img/ocean.jpeg\""){
       $(".codeResults").show();
       $("#correct").fadeIn();
     } else if (codeCheck != "" && codeCheck == "$(\"body\").addClass(\"black-background\");"){
