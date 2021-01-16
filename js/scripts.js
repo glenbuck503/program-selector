@@ -31,8 +31,6 @@ $(document).ready(function() {
     }
   });
 
-
-
   $("form#code").submit(function() {
     event.preventDefault();
     let codeCheck = $.trim($("#codeCheck").val());
@@ -45,12 +43,15 @@ $(document).ready(function() {
     if (codeCheck != "" && codeCheck == "$(\"body\").addClass(\"blue-background\");"){
       $("body").removeClass();
       $("body").addClass("blue-background");
-      // $(".codeResults").show();
-      // $("#correct").fadeIn();
-    }
-    else if (codeCheck != "" && codeCheck == "img class=\"pic\" src=\"img/rust.png\""){
-    $(".codeResults").show();
-    $("#correct").fadeIn();
+    } else if (codeCheck != "" && codeCheck == "img class=\"pic\" src=\"img/rust.png\""){
+      $(".codeResults").show();
+      $("#correct").fadeIn();
+    } else if (codeCheck != "" && codeCheck == "$(\"body\").addClass(\"black-background\");"){
+      $("body").removeClass();
+      $("body").addClass("black-background");
+    } else {
+      $(".codeResults").show();
+      $("#no").fadeIn();
     }
   });
 });
